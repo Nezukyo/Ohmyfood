@@ -1,0 +1,119 @@
+$gradient_main_button : linear-gradient(to bottom right, #FF79DA,#9356DC);
+
+body {
+    font-family: 'Roboto', 'Shrikhand', sans-serif;
+    margin:0;
+}
+
+
+header {
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    padding-bottom:10px;
+    width:100%;
+
+    .omf_logo {
+        width:145px;
+     }
+}
+
+.first-section {
+    background-color:#f7f7f7;
+    margin-top:0;
+
+    .omf-gps-section {
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        background-color: #eaeaea;
+        box-shadow: 0px -2px 1px #8080805c;
+
+        .gps_txt {
+            font-weight:450;
+            color: #4d4c4c;
+            font-size:14px;
+        }
+
+        .omf_gps--grey {
+            color:#353535;
+            align-self:center;
+            margin-right:10px;
+        }
+    }
+
+    .h1-main {
+        text-align:center;
+        font-size:20px;
+    }
+
+    .h2-main {
+        text-align:center;
+        font-weight:normal;
+        font-size:15px;
+    }
+
+    .first-sec-button {
+        display:flex;
+        justify-content:center;
+        padding-bottom:40px;
+
+        .btn-main_search {
+            border-radius:20px;
+            border: none;
+            height: 40px;
+            padding-top:5px;
+            padding-bottom:5px;
+            background: $gradient_main_button;
+            
+        }
+
+        .btn-cursor {
+            cursor:pointer;
+        }
+
+        .btn-main_searchtext {
+            margin-right:10px;
+            margin-left:10px;
+            font-weight:bold;
+            color:white;
+            font-size:11px;
+        
+        }
+    }
+}
+
+footer {
+    padding-left:20px;
+    background-color:#353535;
+    color:white;
+    justify-content:flex-start;
+    .footer_title {
+        color:white;
+        font-family:Shrikhand;
+        padding-top:10px;
+    }
+    .footer_title {
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+    }
+
+    .footer_text {
+
+        font-size:14px;
+        padding-bottom:10px;
+        .footer_couverts { 
+            .couverts {
+                margin-right:10px;
+            }
+        }
+        .footer_partner {
+            .partner {
+                margin-right:7px;
+                font-size:14px;
+            }
+
+        }
+    }
+}

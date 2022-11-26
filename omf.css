@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+
+
+.omf_logo {
+   width:145px;
+}
+
+.omf_gps--grey {
+    color:#353535;
+    align-self:center;
+    margin-right:10px;
+}
+
+.gps_txt {
+    font-weight:450;
+    color: #4d4c4c;
+    font-size:14px;
+}
+
+.omf-gps-section {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    background-color: #eaeaea;
+    box-shadow: 0px -2px 1px #8080805c;
+}
+
+header {
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    padding-bottom:10px;
+    width:100%;
+}
+
+.h1-main {
+    text-align:center;
+    font-size:20px;
+}
+
+.h2-main {
+    text-align:center;
+    font-weight:normal;
+    font-size:15px;
+}
+
+.btn-main_search {
+    border-radius:20px;
+    border: none;
+    height: 40px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background: linear-gradient(to bottom right, #FF79DA,#9356DC);
+    
+}
+
+.first-section {
+    background-color:#f7f7f7;
+    margin-top:0;
+}
+
+.btn-main_searchtext {
+    margin-right:10px;
+    margin-left:10px;
+    font-weight:bold;
+    color:white;
+    font-size:11px;
+}
+
+.first-sec-button {
+    display:flex;
+    justify-content:center;
+    padding-bottom:40px;
+}
+
+.btn-cursor {
+    cursor:pointer;
+}
+
+.footer_title {
+    Width:100px;
+}
