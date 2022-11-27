@@ -57,9 +57,6 @@ header .omf_logo {
   padding-bottom: 5px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
-.first-section .first-sec-button .btn-cursor {
-  cursor: pointer;
-}
 .first-section .first-sec-button .btn-main_searchtext {
   margin-right: 10px;
   margin-left: 10px;
@@ -67,31 +64,204 @@ header .omf_logo {
   color: white;
   font-size: 11px;
 }
+.first-section .first-sec-button .btn-cursor {
+  cursor: pointer;
+}
+
+.h3-main {
+  font-size: 18px;
+  margin-left: 24px;
+}
+
+.second-section .filters-section .filters-styling {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+.second-section .filters-section .choose {
+  cursor: pointer;
+  width: 90%;
+  border: solid #f7f7f7;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.3607843137);
+}
+.second-section .filters-section .choose:hover {
+  background-color: #f5edff;
+  border: solid #f5edff;
+}
+.second-section .filters-section .choose:hover .choose_margin {
+  color: #9356DC;
+}
+.second-section .filters-section .choose .choose_margin {
+  margin-right: 30px;
+  margin-left: 25px;
+  font-size: 16px;
+}
+.second-section .filters-section .choose .circle-1 {
+  border: solid #9356DC;
+  border-radius: 70px;
+  padding: 5px 5px;
+  font-size: 8px;
+  margin-left: -12px;
+  background-color: #9356DC;
+  color: white;
+  width: 2%;
+  height: 1%;
+  text-align: center;
+  align-items: center;
+}
+.second-section .filters-section .compose {
+  cursor: pointer;
+  width: 90%;
+  border: solid #f7f7f7;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.3607843137);
+}
+.second-section .filters-section .compose:hover {
+  background-color: #f5edff;
+  border: solid #f5edff;
+}
+.second-section .filters-section .compose:hover .compose_margin {
+  color: #9356DC;
+}
+.second-section .filters-section .compose .compose_margin {
+  margin-right: 27px;
+  margin-left: 25px;
+  font-size: 14px;
+}
+.second-section .filters-section .compose .circle-2 {
+  border: solid #9356DC;
+  border-radius: 70px;
+  padding: 5px 5px;
+  font-size: 8px;
+  margin-left: -12px;
+  background-color: #9356DC;
+  color: white;
+  width: 2%;
+  height: 1%;
+  text-align: center;
+}
+.second-section .filters-section .savor {
+  cursor: pointer;
+  width: 90%;
+  border: solid #f7f7f7;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.3607843137);
+}
+.second-section .filters-section .savor:hover {
+  background-color: #f5edff;
+  border: solid #f5edff;
+}
+.second-section .filters-section .savor:hover .savor_margin {
+  color: #9356DC;
+}
+.second-section .filters-section .savor .savor_margin {
+  margin-right: 26px;
+  margin-left: 25px;
+  font-size: 15px;
+}
+.second-section .filters-section .savor .circle-3 {
+  border: solid #9356DC;
+  border-radius: 70px;
+  padding: 5px 5px;
+  font-size: 8px;
+  margin-left: -12px;
+  background-color: #9356DC;
+  color: white;
+  width: 2%;
+  height: 1%;
+  text-align: center;
+}
+
+.main-mainpage {
+  background-color: #f7f7f7;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+.main-mainpage .restaurants-main {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.main-mainpage .restaurants-bloc-image {
+  display: flex;
+  flex-direction: column;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info {
+  border: solid white 0;
+  background-color: white;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-bottom: 10px;
+  width: 260px;
+  height: 190px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.3607843137);
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .h3-restaurants-info {
+  font-size: 16px;
+  font-style: none;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .restaurants-card-margin {
+  margin-left: 15px;
+  margin-top: -30px;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .restaurants-main-txt {
+  margin-top: -8px;
+  font-size: 12px;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .heart-main {
+  margin-left: 220px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .restaurants-img {
+  width: 100%;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .restaurants-img-dim {
+  height: 130px;
+  width: 260px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
 
 footer {
   padding-left: 20px;
   background-color: #353535;
   color: white;
-  justify-content: flex-start;
 }
-footer .footer_title {
+footer .footer-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   color: white;
   font-family: Shrikhand;
   padding-top: 10px;
 }
-footer .footer_title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-footer .footer_text {
+footer .footer-text {
   font-size: 14px;
   padding-bottom: 10px;
 }
-footer .footer_text .footer_couverts .couverts {
+footer .footer-text .footer-couverts .couverts {
   margin-right: 10px;
 }
-footer .footer_text .footer_partner .partner {
+footer .footer-text .footer-partner .partner {
   margin-right: 7px;
   font-size: 14px;
 }
