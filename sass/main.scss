@@ -1,3 +1,4 @@
+$main-gradient-colors :linear-gradient(to bottom right, #FF79DA, #9356DC);
 $main_filters_color :#f7f7f7;
 @mixin main-page-filters-style {
     width:90%;
@@ -38,7 +39,7 @@ $main_filters_color :#f7f7f7;
     height: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background: $main-gradient-colors;
 }
 
 body {
@@ -216,7 +217,7 @@ header {
                 border-top-right-radius:25px;
                 border-bottom-right-radius:20px;
                 border-bottom-left-radius:20px;
-                margin-bottom:10px;
+                margin-bottom:25px;
                 width:260px;
                 height:190px;
                 text-decoration:none;
@@ -238,6 +239,11 @@ header {
                 }
 
                 .heart-main {
+                    &:hover {
+                    background: -webkit-linear-gradient(#9356DC,#FF79DA);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    }
                     margin-left:220px;
                     font-size:18px;
                     margin-top:15px;

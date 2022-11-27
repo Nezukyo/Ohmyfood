@@ -206,7 +206,7 @@ header .omf_logo {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   width: 260px;
   height: 190px;
   text-decoration: none;
@@ -229,6 +229,11 @@ header .omf_logo {
   margin-left: 220px;
   font-size: 18px;
   margin-top: 15px;
+}
+.main-mainpage .restaurants-bloc-image .restaurants-main-info .heart-main:hover {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main-mainpage .restaurants-bloc-image .restaurants-main-info .restaurants-img {
   width: 100%;
