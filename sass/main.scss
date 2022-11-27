@@ -1,4 +1,3 @@
-$gradient_main_button : linear-gradient(to bottom right, #FF79DA,#9356DC);
 $main_filters_color :#f7f7f7;
 @mixin main-page-filters-style {
     width:90%;
@@ -31,6 +30,15 @@ $main_filters_color :#f7f7f7;
 
 @mixin hover-cursor {
     cursor:pointer;
+}
+
+@mixin btn-gradients {
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
 }
 
 body {
@@ -92,13 +100,7 @@ header {
         padding-bottom:40px;
 
         .btn-main_search {
-            border-radius:20px;
-            border: none;
-            height: 40px;
-            padding-top:5px;
-            padding-bottom:5px;
-            background: $gradient_main_button;
-            
+        @include btn-gradients  
         }
 
         .btn-main_searchtext {
