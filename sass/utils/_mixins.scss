@@ -1,0 +1,41 @@
+@mixin main-page-filters-style {
+    width:90%;
+    border:solid $main_filters_color;
+    background-color:$main_filters_color;
+    border-radius:15px;
+    margin-bottom:15px;
+    font-weight:bold;
+    font-size:14px;
+    box-shadow: 0px 2px 4px rgba(128, 128, 128, 0.3607843137);
+}
+
+@mixin main-page-filters-circle {
+    border:solid #9356DC;
+    border-radius:70px;
+    padding:5px 5px;
+    font-size:8px;
+    margin-left:-12px;
+    background-color:#9356DC;
+    color:white;
+    width:2%;
+    height:1%;
+    text-align:center;
+}
+
+@mixin main-page-filters-hover {
+    background-color:#f5edff;
+    border:solid #f5edff;
+    }
+
+@mixin hover-cursor {
+    cursor:pointer;
+}
+
+@mixin btn-gradients {
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: $main-gradient-colors;
+}

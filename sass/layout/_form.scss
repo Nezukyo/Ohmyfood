@@ -1,0 +1,22 @@
+.first-sec-button {
+    display:flex;
+    justify-content:center;
+    padding-bottom:40px;
+
+    .btn-main_search {
+    @include btn-gradients  
+    }
+
+    .btn-main_searchtext {
+        margin-right:10px;
+        margin-left:10px;
+        font-weight:bold;
+        color:white;
+        font-size:11px;
+    
+    }
+
+    .btn-cursor {
+        @include hover-cursor;
+    }
+}

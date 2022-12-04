@@ -1,0 +1,31 @@
+footer {
+    padding-left:20px;
+    background-color:#353535;
+    color:white;
+    .footer-title {
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        color:white;
+        font-family:Shrikhand;
+        padding-top:10px;
+    }
+
+    .footer-text {
+
+        font-size:14px;
+        padding-bottom:10px;
+        .footer-couverts { 
+            .couverts {
+                margin-right:10px;
+            }
+        }
+        .footer-partner {
+            .partner {
+                margin-right:7px;
+                font-size:14px;
+            }
+
+        }
+    }
+}
