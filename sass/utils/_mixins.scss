@@ -39,3 +39,17 @@
     padding-bottom: 5px;
     background: $main-gradient-colors;
 }
+
+@mixin cards-title-main {
+    margin-top:-44px;
+    margin-left:14px;
+}
+
+@mixin restaurants-info {
+    font-size:15px;
+}
+
+@mixin restaurants-main-txt {
+font-size:12px;
+margin-top:-6px;
+}
