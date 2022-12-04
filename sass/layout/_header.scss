@@ -1,11 +1,22 @@
 header {
     display:flex;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.omf-logo-header {
+    display:flex;
     justify-content:center;
     margin-top:20px;
     padding-bottom:10px;
-    width:100%;
+    width:83%;
 
     .omf_logo {
         width:145px;
+     }
+
+     .omf-menu-arrow {
+        width:22%;
+        color:#686565;
      }
 }

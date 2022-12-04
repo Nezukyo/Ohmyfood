@@ -24,13 +24,23 @@
 
 header {
   display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.omf-logo-header {
+  display: flex;
   justify-content: center;
   margin-top: 20px;
   padding-bottom: 10px;
-  width: 100%;
+  width: 83%;
 }
-header .omf_logo {
+.omf-logo-header .omf_logo {
   width: 145px;
+}
+.omf-logo-header .omf-menu-arrow {
+  width: 22%;
+  color: #686565;
 }
 
 footer {
@@ -315,6 +325,12 @@ body {
   font-size: 15px;
   color: #149374;
   font-weight: bold;
+}
+
+.background-fr .background-fr-dim {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
