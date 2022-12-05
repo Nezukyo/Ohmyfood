@@ -40,6 +40,12 @@
     background: $main-gradient-colors;
 }
 
+@mixin btn-txt-style {
+    font-weight:bold;
+    color:white;
+    font-size:11px;
+}
+
 @mixin cards-title-main {
     margin-top:-44px;
     margin-left:14px;
@@ -52,4 +58,24 @@
 @mixin restaurants-main-txt {
 font-size:12px;
 margin-top:-6px;
+}
+
+@mixin cards-menu {
+    border: solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    height: 36px;
+    box-shadow: 1px 1px 5px rgb(128 128 128 / 14%);
+}
+
+@mixin entree-plat-dessert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 93%;
 }

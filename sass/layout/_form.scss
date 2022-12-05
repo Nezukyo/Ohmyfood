@@ -1,22 +1,33 @@
-.first-sec-button {
+.first-sec-button, .first-menu-btn {
     display:flex;
     justify-content:center;
     padding-bottom:40px;
 
-    .btn-main_search {
+    .btn-main_search, .btn-menu-order {
     @include btn-gradients  
     }
 
     .btn-main_searchtext {
         margin-right:10px;
         margin-left:10px;
-        font-weight:bold;
-        color:white;
-        font-size:11px;
+        @include btn-txt-style;
     
     }
 
     .btn-cursor {
         @include hover-cursor;
+    }
+}
+
+.first-menu-btn {
+    .order {
+        margin-top:17px;
+        margin-bottom:-24px;
+
+        .btn-menu-txt {
+            @include btn-txt-style;
+            padding-right:30px;
+            padding-left:30px;
+        }
     }
 }

@@ -14,25 +14,128 @@
 <body>
 
 <header>
+
     <div class="omf-logo-header">
-        <div class="omf-menu-arrow">
+        <a class="omf-menu-arrow" href="Ohmyfood.html">
             <i class="fa-solid fa-arrow-left"></i>
-        </div>
+        </a>
         <div class="omf-menu-logo">
             <img class="omf_logo" src="Maquette+Ohmyfood/Maquette_Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo omf">
         </div>
     </div>
+
 </header>
 
-<section>
+<main class="main-menus">
     <div class="background-fr">
         <img class="background-fr-dim" src="Maquette+Ohmyfood/Maquette_Ohmyfood/images/restaurants/fr.jpg" alt="img menu fr">
     </div>
-</section>
+    <div class="bloc-menu-francaise">
+    <div class="menu-name">
+        <h1 class="restaurant-name">A la française</h1>
+        <div class="heart-menu">
+            <i class="fa-regular fa-heart"></i>
+        </div>
+    </div>
+    <div class="entree">
+        <p class="menu-categories"><span class="green-bar">ENTR</span>ÉES</p>
+
+        <div class="tartare">
+            <div class="menu-text">
+                <p class="cards-menu-title">Tartare de pouple acidulé</p>
+                <p class="more-info-menu">Aux zestes d'oranges</p>
+            </div>
+            <p class="price">25€</p>
+        </div>
+
+        <div class="veloute">
+            <div class="menu-text">
+                <p class="cards-menu-title">Velouté de légumes d'antan</p>
+                <p class="more-info-menu">carotte, panais, topinambour</p>
+            </div>
+            <p class="price">35€</p>
+        </div>
+
+        <div class="soupe">
+            <div class="menu-text">
+                <p class="cards-menu-title">Soupe à l'oignon</p>
+                <p class="more-info-menu">Revisitée</p>
+            </div>
+            <p class="price">20€</p>
+
+        </div>
+    </div>
+
+    <div class="plats">
+        <p class="menu-categories"><span class="green-bar">PLAT</span>S</p>
+
+        <div class="coquilles">
+            <div class="menu-text">
+                <p class="cards-menu-title">Coquilles Saint-Jacques</p>
+                <p class="more-info-menu">Accompagnées d'une purée de panais</p>
+            </div>
+            <p class="price">40€</p>
+        </div>
+
+        <div class="magret">
+            <div class="menu-text">
+                <p class="cards-menu-title">Magret de canard</p>
+                <p class="more-info-menu">Et parmentier de pommes de terre</p>
+            </div>
+            <p class="price">35€</p>
+        </div>
+
+        <div class="pigeon">
+            <div class="menu-text">
+                <p class="cards-menu-title">Pigeonneau d'Ille-et-Vilaine</p>
+                <p class="more-info-menu">Sur son lit de gnocchis aux légumes</p>
+            </div>
+            <p class="price">44€</p>
+        </div>
+    </div>
+
+    <div class="desserts">
+        <p class="menu-categories"><span class="green-bar">DESS</span>ERTS</p>
+
+        <div class="petales">
+            <div class="menu-text">
+                <p class="cards-menu-title">Pétales de violettes glacés</p>
+                <p class="more-info-menu">Et purée de noisettes</p>
+            </div>
+            <p class="price">18€</p>
+        </div>
+
+        <div class="fondant">
+            <div class="menu-text">
+                <p class="cards-menu-title">Fondant au chocolat</p>
+                <p class="more-info-menu">Revisité</p>
+            </div>
+            <p class="price">22€</p>
+        </div>
+
+        <div class="millefeuille">
+            <div class="menu-text">
+                <p class="cards-menu-title">Millefeuille croustillant</p>
+                <p class="more-info-menu">Myrtilles et pâte d'amande</p>
+            </div>
+            <p class="price">23€</p>
+        </div>
+
+        <div class="first-menu-btn">
+            <form class="order" method="post" action="commandes.php">
+                <button class="btn-menu-order btn-cursor" type="submit"><span class="btn-menu-txt">Commander</span></button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+</main>
 
 
 <footer>
-    <div class="footer-title">Ohmyfood</div>
+    <div class="footer-title">
+        Ohmyfood
+    </div>
     <div class="footer-text">
         <div class="footer-couverts">
             <p><i class="fa-solid fa-utensils couverts"></i>Proposer un restaurant</p>
@@ -43,6 +146,7 @@
         <p> Mentions légales</p>
         <p>Contact</p>
     </div>
+
 </footer>
 </body>
 </html>
