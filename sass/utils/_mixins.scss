@@ -66,16 +66,24 @@ margin-top:-6px;
     border-radius: 16px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 92%;
     padding: 8px;
     margin-bottom: 10px;
     height: 36px;
     box-shadow: 1px 1px 5px rgb(128 128 128 / 14%);
+    margin-right: 4px;
+    margin-left: 4px;
 }
 
 @mixin entree-plat-dessert {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 93%;
+    align-items: center;
+    width: 100%;
+}
+
+@mixin logo-omf-base {
+    display:flex;
+    justify-content:center;
+    padding-bottom:10px;
 }

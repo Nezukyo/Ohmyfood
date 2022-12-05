@@ -1,6 +1,7 @@
 body {
     font-family: 'Roboto', 'Shrikhand', sans-serif;
     margin:0;
+    padding:0;
 }
 
 .first-section {
@@ -46,13 +47,14 @@ body {
 .second-section {
     .filters-section {
         .filters-styling {
-            display:flex;
-            flex-direction:column;
-            margin-left:25px;
+            padding-left:5%;
+            padding-right:5%;
+            width:100%;
         }
 
         .choose {
             @include hover-cursor;
+            width:90%;
             &:hover {
                 @include main-page-filters-hover;
                 .choose_margin {

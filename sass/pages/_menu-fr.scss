@@ -2,7 +2,7 @@
     margin-bottom:-5px;
     .background-fr-dim {
         width: 100%;
-        height: 250px;
+        height: 350px;
         object-fit: cover;
     }
 }
@@ -48,15 +48,14 @@
     .bloc-menu-francaise {
         padding: 8px 8px;
         background-color: #f7f7f7;
-        border: solid #f7f7f7;
         border-top-left-radius: 34px;
         position: relative;
-        top: -50px;
+        top: -46px;
         border-top-right-radius: 34px;
     .menu-name {
         display:flex;
         justify-content:space-between;
-        margin-left:4px;
+        margin-left:10px;
     .restaurant-name {
         font-family:shrikhand, sans-serif;
         font-size:22px;
@@ -72,10 +71,12 @@
     .entree, .plats, .desserts {
         @include entree-plat-dessert;
 
-        .menu-categories {
+        .menu-cat-txt {
             font-family:Roboto;
             font-size:15px;
             margin-left:7px;
+            display: flex;
+            align-self: start;
         }
     }
 }

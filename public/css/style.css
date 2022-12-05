@@ -45,15 +45,27 @@ header {
   justify-content: center;
   margin-top: 20px;
   padding-bottom: 10px;
+  margin-top: 20px;
   width: 100%;
+}
+.omf-logo-header .omf-menu-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  width: 95%;
+  margin-top: -5px;
+  margin-left: -30px;
 }
 .omf-logo-header .omf_logo {
   width: 145px;
 }
 .omf-logo-header .omf-menu-arrow {
-  width: 24%;
   color: #686565;
-  margin-left: -67px;
+  display: flex;
+  justify-content: start;
+  width: 2%;
+  margin-left: 10px;
 }
 
 footer {
@@ -83,7 +95,8 @@ footer .footer-text .footer-partner .partner {
 
 body {
   font-family: "Roboto", "Shrikhand", sans-serif;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 .first-section {
@@ -123,12 +136,13 @@ body {
 }
 
 .second-section .filters-section .filters-styling {
-  display: flex;
-  flex-direction: column;
-  margin-left: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
 }
 .second-section .filters-section .choose {
   cursor: pointer;
+  width: 90%;
   width: 90%;
   border: solid #f7f7f7;
   background-color: #f7f7f7;
@@ -345,7 +359,7 @@ body {
 }
 .background-fr .background-fr-dim {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
 }
 
@@ -380,11 +394,13 @@ body {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 92%;
   padding: 8px;
   margin-bottom: 10px;
   height: 36px;
   box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.14);
+  margin-right: 4px;
+  margin-left: 4px;
   cursor: pointer;
 }
 .main-menus .green-bar {
@@ -394,16 +410,15 @@ body {
 .main-menus .bloc-menu-francaise {
   padding: 8px 8px;
   background-color: #f7f7f7;
-  border: solid #f7f7f7;
   border-top-left-radius: 34px;
   position: relative;
-  top: -50px;
+  top: -46px;
   border-top-right-radius: 34px;
 }
 .main-menus .bloc-menu-francaise .menu-name {
   display: flex;
   justify-content: space-between;
-  margin-left: 4px;
+  margin-left: 10px;
 }
 .main-menus .bloc-menu-francaise .menu-name .restaurant-name {
   font-family: shrikhand, sans-serif;
@@ -417,13 +432,15 @@ body {
 .main-menus .entree, .main-menus .plats, .main-menus .desserts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 93%;
+  align-items: center;
+  width: 100%;
 }
-.main-menus .entree .menu-categories, .main-menus .plats .menu-categories, .main-menus .desserts .menu-categories {
+.main-menus .entree .menu-cat-txt, .main-menus .plats .menu-cat-txt, .main-menus .desserts .menu-cat-txt {
   font-family: Roboto;
   font-size: 15px;
   margin-left: 7px;
+  display: flex;
+  align-self: start;
 }
 
 /*# sourceMappingURL=style.css.map */
