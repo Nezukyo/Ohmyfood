@@ -38,16 +38,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
     background: $main-gradient-colors;
-}
-
-@mixin btn-txt-style {
     font-weight:bold;
     color:white;
     font-size:11px;
 }
 
 @mixin cards-title-main {
-    margin-top:-44px;
     margin-left:14px;
 }
 
@@ -67,12 +63,11 @@ margin-top:-6px;
     display: flex;
     flex-direction: column;
     width: 92%;
-    padding: 8px;
     margin-bottom: 10px;
-    height: 36px;
     box-shadow: 1px 1px 5px rgb(128 128 128 / 14%);
     margin-right: 4px;
     margin-left: 4px;
+    border:0;
 }
 
 @mixin entree-plat-dessert {

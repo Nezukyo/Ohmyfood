@@ -3,16 +3,12 @@
     justify-content:center;
     padding-bottom:40px;
 
-    .btn-main_search, .btn-menu-order {
-    @include btn-gradients  
+    .btn-main_search {
+    @include btn-gradients;
+    padding-right:10px;
+    padding-left:10px; 
     }
 
-    .btn-main_searchtext {
-        margin-right:10px;
-        margin-left:10px;
-        @include btn-txt-style;
-    
-    }
 
     .btn-cursor {
         @include hover-cursor;
@@ -23,11 +19,32 @@
     .order {
         margin-top:17px;
         margin-bottom:-24px;
+    }
+}
 
-        .btn-menu-txt {
-            @include btn-txt-style;
-            padding-right:30px;
-            padding-left:30px;
+.btn-menu-order, .btn-main_search {
+    padding-right:30px;
+    padding-left:30px;
+    @include btn-gradients;
+    position:relative;
+    z-index:1;
+
+    &:hover {
+        &::after {
+            opacity:1;
         }
+    }
+    &::after {
+        content:"";
+        position:absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        border-radius:20px;
+        background: linear-gradient(to bottom right,lighten(#FF79DA,3.5),lighten(#9356DC,3.5));
+        opacity:0;
+        z-index:-1;
+        transition:opacity 260ms;
     }
 }

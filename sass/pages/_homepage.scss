@@ -132,6 +132,18 @@ body {
             display:flex;
             flex-direction:column;
 
+            .heart-icon {
+                margin-left:220px;
+                font-size:18px;
+                margin-top:-66px;
+
+                    &:hover {
+                    background: -webkit-linear-gradient(#9356DC,#FF79DA);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    }    
+            }
+
             .restaurants-main-info {
                 border:solid white 0;
                 background-color:white;
@@ -164,19 +176,8 @@ body {
                 }
 
                 .card-text-main-1-2 {
-                    .heart-icon {
-                        margin-left:220px;
-                        font-size:18px;
-                        margin-top:-11px;
-
-                            &:hover {
-                            background: -webkit-linear-gradient(#9356DC,#FF79DA);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            }    
-                    }
-
                     .cards-title-main {
+                        margin-top:-35px;
                         @include cards-title-main;
 
                         .h3-restaurants-info {
@@ -192,20 +193,9 @@ body {
                 }
 
                 .card-text-main-3-4 {
-                    .heart-icon {
-                        margin-left:220px;
-                        font-size:18px;
-                        margin-top:11px;
-    
-                            &:hover {
-                            background: -webkit-linear-gradient(#9356DC,#FF79DA);
-                            -webkit-background-clip: text;
-                            -webkit-text-fill-color: transparent;
-                            }
-    
-                    }
 
                     .cards-title-main {
+                        margin-top:-10px;
                         @include cards-title-main;
 
                         .h3-restaurants-info {

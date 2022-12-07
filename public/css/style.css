@@ -3,20 +3,18 @@
   justify-content: center;
   padding-bottom: 40px;
 }
-.first-sec-button .btn-main_search, .first-sec-button .btn-menu-order, .first-menu-btn .btn-main_search, .first-menu-btn .btn-menu-order {
+.first-sec-button .btn-main_search, .first-menu-btn .btn-main_search {
   border-radius: 20px;
   border: none;
   height: 40px;
   padding-top: 5px;
   padding-bottom: 5px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-}
-.first-sec-button .btn-main_searchtext, .first-menu-btn .btn-main_searchtext {
-  margin-right: 10px;
-  margin-left: 10px;
   font-weight: bold;
   color: white;
   font-size: 11px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .first-sec-button .btn-cursor, .first-menu-btn .btn-cursor {
   cursor: pointer;
@@ -26,12 +24,37 @@
   margin-top: 17px;
   margin-bottom: -24px;
 }
-.first-menu-btn .order .btn-menu-txt {
+
+.btn-menu-order, .btn-main_search {
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   font-weight: bold;
   color: white;
   font-size: 11px;
-  padding-right: 30px;
-  padding-left: 30px;
+  position: relative;
+  z-index: 1;
+}
+.btn-menu-order:hover::after, .btn-main_search:hover::after {
+  opacity: 1;
+}
+.btn-menu-order::after, .btn-main_search::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background: linear-gradient(to bottom right, #ff8bdf, #9c65df);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 260ms;
 }
 
 header {
@@ -43,7 +66,6 @@ header {
 .omf-logo-header {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   padding-bottom: 10px;
   margin-top: 20px;
   width: 100%;
@@ -51,7 +73,6 @@ header {
 .omf-logo-header .omf-menu-logo {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   padding-bottom: 10px;
   width: 95%;
   margin-top: -5px;
@@ -262,6 +283,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+.main-mainpage .restaurants-bloc-image .heart-icon {
+  margin-left: 220px;
+  font-size: 18px;
+  margin-top: -66px;
+}
+.main-mainpage .restaurants-bloc-image .heart-icon:hover {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .main-mainpage .restaurants-bloc-image .restaurants-main-info {
   border: solid white 0;
   background-color: white;
@@ -290,18 +321,8 @@ body {
   border-top-right-radius: 20px;
   object-fit: cover;
 }
-.main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-1-2 .heart-icon {
-  margin-left: 220px;
-  font-size: 18px;
-  margin-top: -11px;
-}
-.main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-1-2 .heart-icon:hover {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-1-2 .cards-title-main {
-  margin-top: -44px;
+  margin-top: -35px;
   margin-left: 14px;
 }
 .main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-1-2 .cards-title-main .h3-restaurants-info {
@@ -311,18 +332,8 @@ body {
   font-size: 12px;
   margin-top: -6px;
 }
-.main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-3-4 .heart-icon {
-  margin-left: 220px;
-  font-size: 18px;
-  margin-top: 11px;
-}
-.main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-3-4 .heart-icon:hover {
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-3-4 .cards-title-main {
-  margin-top: -44px;
+  margin-top: -10px;
   margin-left: 14px;
 }
 .main-mainpage .restaurants-bloc-image .restaurants-main-info .card-text-main-3-4 .cards-title-main .h3-restaurants-info {
@@ -379,14 +390,21 @@ body {
 .main-menus .more-info-menu {
   font-size: 12px;
   margin-top: -5px;
-  margin-bottom: -10px;
+  width: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.main-menus .more-info-bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 13px;
 }
 .main-menus .price {
   font-size: 11px;
-  text-align: end;
-  padding-right: 10px;
-  margin-top: 9px;
   font-weight: bold;
+  margin-top: -5px;
 }
 .main-menus .veloute, .main-menus .soupe, .main-menus .tartare, .main-menus .coquilles, .main-menus .magret, .main-menus .pigeon, .main-menus .petales, .main-menus .fondant, .main-menus .millefeuille {
   border: solid #ffffff;
@@ -395,13 +413,49 @@ body {
   display: flex;
   flex-direction: column;
   width: 92%;
-  padding: 8px;
   margin-bottom: 10px;
-  height: 36px;
   box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.14);
   margin-right: 4px;
   margin-left: 4px;
+  border: 0;
   cursor: pointer;
+  flex-direction: row;
+}
+.main-menus .veloute .slider-content, .main-menus .soupe .slider-content, .main-menus .tartare .slider-content, .main-menus .coquilles .slider-content, .main-menus .magret .slider-content, .main-menus .pigeon .slider-content, .main-menus .petales .slider-content, .main-menus .fondant .slider-content, .main-menus .millefeuille .slider-content {
+  transition: width 0.4s ease-in, visibility 4s linear;
+  width: 100%;
+  margin: 10px 4px 0 15px;
+}
+.main-menus .veloute .tartare-content-hover, .main-menus .soupe .tartare-content-hover, .main-menus .tartare .tartare-content-hover, .main-menus .coquilles .tartare-content-hover, .main-menus .magret .tartare-content-hover, .main-menus .pigeon .tartare-content-hover, .main-menus .petales .tartare-content-hover, .main-menus .fondant .tartare-content-hover, .main-menus .millefeuille .tartare-content-hover {
+  visibility: hidden;
+  background-color: #99E2D0;
+  display: block;
+}
+.main-menus .veloute .tartare-content-hover .check-icon, .main-menus .soupe .tartare-content-hover .check-icon, .main-menus .tartare .tartare-content-hover .check-icon, .main-menus .coquilles .tartare-content-hover .check-icon, .main-menus .magret .tartare-content-hover .check-icon, .main-menus .pigeon .tartare-content-hover .check-icon, .main-menus .petales .tartare-content-hover .check-icon, .main-menus .fondant .tartare-content-hover .check-icon, .main-menus .millefeuille .tartare-content-hover .check-icon {
+  transform: rotate(-260deg);
+  transition: transform 1s ease-in-out;
+}
+.main-menus .veloute:hover .slider-content, .main-menus .soupe:hover .slider-content, .main-menus .tartare:hover .slider-content, .main-menus .coquilles:hover .slider-content, .main-menus .magret:hover .slider-content, .main-menus .pigeon:hover .slider-content, .main-menus .petales:hover .slider-content, .main-menus .fondant:hover .slider-content, .main-menus .millefeuille:hover .slider-content {
+  width: 80%;
+}
+.main-menus .veloute:hover .slider, .main-menus .soupe:hover .slider, .main-menus .tartare:hover .slider, .main-menus .coquilles:hover .slider, .main-menus .magret:hover .slider, .main-menus .pigeon:hover .slider, .main-menus .petales:hover .slider, .main-menus .fondant:hover .slider, .main-menus .millefeuille:hover .slider {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.main-menus .veloute:hover .tartare-content-hover, .main-menus .soupe:hover .tartare-content-hover, .main-menus .tartare:hover .tartare-content-hover, .main-menus .coquilles:hover .tartare-content-hover, .main-menus .magret:hover .tartare-content-hover, .main-menus .pigeon:hover .tartare-content-hover, .main-menus .petales:hover .tartare-content-hover, .main-menus .fondant:hover .tartare-content-hover, .main-menus .millefeuille:hover .tartare-content-hover {
+  width: 20%;
+  background-color: #99E2D0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  visibility: visible;
+}
+.main-menus .veloute:hover .tartare-content-hover .check-icon, .main-menus .soupe:hover .tartare-content-hover .check-icon, .main-menus .tartare:hover .tartare-content-hover .check-icon, .main-menus .coquilles:hover .tartare-content-hover .check-icon, .main-menus .magret:hover .tartare-content-hover .check-icon, .main-menus .pigeon:hover .tartare-content-hover .check-icon, .main-menus .petales:hover .tartare-content-hover .check-icon, .main-menus .fondant:hover .tartare-content-hover .check-icon, .main-menus .millefeuille:hover .tartare-content-hover .check-icon {
+  width: 22%;
+  color: white;
+  font-size: 20px;
+  transform: rotate(0);
 }
 .main-menus .green-bar {
   text-decoration: underline #99E2D0 3px;

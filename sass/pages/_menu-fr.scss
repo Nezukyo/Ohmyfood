@@ -24,20 +24,70 @@
     .more-info-menu {
         font-size:12px;
         margin-top:-5px;
-        margin-bottom:-10px;
+        width:auto;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+
+    .more-info-bloc {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        margin-bottom:13px;
     }
 
     .price {
         font-size: 11px;
-        text-align:end;
-        padding-right:10px;
-        margin-top:9px;
         font-weight:bold;
+        margin-top:-5px;
     }
 
     .veloute, .soupe, .tartare, .coquilles, .magret, .pigeon, .petales, .fondant, .millefeuille {
         @include cards-menu;
         @include hover-cursor;
+        flex-direction:row;
+        .slider-content {
+            transition: width 0.4s ease-in, visibility 4s linear;
+            width: 100%;
+            margin: 10px 4px 0 15px;
+        }
+        .tartare-content-hover {
+            visibility: hidden;
+            background-color:#99E2D0;
+            display:block;
+
+            .check-icon {
+                transform:rotate(-260deg);
+                transition: transform 1s ease-in-out;
+            }
+        }
+        &:hover {
+            .slider-content {
+              width: 80%;
+            }
+
+            .slider {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                align-items: center;
+            }
+            .tartare-content-hover {
+              width:20%;
+              background-color:#99E2D0;
+              border-top-right-radius:16px;
+              border-bottom-right-radius:16px;
+              visibility: visible;
+
+              .check-icon {
+                width:22%;
+                color:white;
+                font-size:20px;
+                transform:rotate(0);
+            }
+            }
+          }
     }
 
     .green-bar {
