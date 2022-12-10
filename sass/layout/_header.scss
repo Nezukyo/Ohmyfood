@@ -7,26 +7,25 @@ header {
 .omf-logo-header {
     @include logo-omf-base;
     margin-top:20px;
-    width:100%;
+    width: 100%;
 
-    .omf-menu-arrow {
-        color: #686565;
-        display: flex;
-        justify-content: start;
-        width: 2%;
-        margin-left: 10px;
-        text-decoration:none;
-     }
-     
     .omf-menu-logo {
         @include logo-omf-base;
-        width: 95%;
-        margin-top:-5px;
-        margin-left:-30px;
+        flex:1;
+        justify-content: space-around;
     }
 
-    .omf_logo {
-        width:145px;
-     }
+    .omf-menu-arrow {
+        display: flex;
+        justify-content: center;
+        color: #686565;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+}
 
+.white-space {
+    @include logo-omf-base;
+    width: 10%;
+    align-self: center;
 }
