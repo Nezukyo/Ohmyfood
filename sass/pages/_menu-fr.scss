@@ -11,8 +11,9 @@
     background-color:#f7f7f7;
     margin-bottom:-40px;
     .menu-text {
-        margin-top:-15px;
+        margin-top:-5px;
         margin-bottom:-14px;
+        margin-right:5px;
     }
 
     .cards-menu-title {
@@ -43,52 +44,66 @@
         margin-top:-5px;
     }
 
-    .veloute, .soupe, .tartare, .coquilles, .magret, .pigeon, .petales, .fondant, .millefeuille {
+    .menu-content {
         @include cards-menu;
         @include hover-cursor;
         flex-direction:row;
-        .slider-content {
-            transition: width 0.4s ease-in, visibility 4s linear;
-            width: 100%;
-            margin: 10px 4px 0 15px;
+
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .tartare-content-hover {
-            visibility: hidden;
+        
+        .slider-content {
+            width:100%;
+            border-top-left-radius:16px;
+            border-bottom-left-radius:16px;
+            padding-left:15px;
+            padding-right:2%;
+            text-overflow:ellipsis;
+            overflow:hidden;
+            height:65px;
+        }
+
+        .more-info-bloc {
+            display:flex;
+            flex-direction:row;
+            justify-content:space-between;
+            width:100%;
+        }
+
+        .menu-content-hover {
             background-color:#99E2D0;
-            display:block;
+            width:0%;
+            display:flex;
+            border-top-right-radius:16px;
+            border-bottom-right-radius:16px;
+            justify-content:center;
+            transition: width .6s ease-in-out;
+
 
             .check-icon {
                 transform:rotate(-260deg);
-                transition: transform 1s ease-in-out;
+                transition: transform 1s, opacity 0.5s;
+                color:white;
+                font-size:20px;
+                text-align:center;
+                opacity:0;
             }
         }
         &:hover {
-            .slider-content {
-              width: 80%;
-            }
 
-            .slider {
-                display: flex;
-                justify-content: center;
-                height: 100%;
-                align-items: center;
-            }
-            .tartare-content-hover {
-              width:20%;
-              background-color:#99E2D0;
-              border-top-right-radius:16px;
-              border-bottom-right-radius:16px;
-              visibility: visible;
+            .menu-content-hover {
+                width:20%;
 
               .check-icon {
-                width:22%;
-                color:white;
-                font-size:20px;
-                transform:rotate(0);
+                transform: rotate(0);
+                opacity:1;
             }
-            }
-          }
+            }       
     }
+}
 
     .green-bar {
         text-decoration: underline #99E2D0 3px;

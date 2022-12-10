@@ -70,6 +70,14 @@ header {
   margin-top: 20px;
   width: 100%;
 }
+.omf-logo-header .omf-menu-arrow {
+  color: #686565;
+  display: flex;
+  justify-content: start;
+  width: 2%;
+  margin-left: 10px;
+  text-decoration: none;
+}
 .omf-logo-header .omf-menu-logo {
   display: flex;
   justify-content: center;
@@ -80,13 +88,6 @@ header {
 }
 .omf-logo-header .omf_logo {
   width: 145px;
-}
-.omf-logo-header .omf-menu-arrow {
-  color: #686565;
-  display: flex;
-  justify-content: start;
-  width: 2%;
-  margin-left: 10px;
 }
 
 footer {
@@ -118,6 +119,7 @@ body {
   font-family: "Roboto", "Shrikhand", sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 320px;
 }
 
 .first-section {
@@ -363,7 +365,7 @@ body {
   left: 11px;
 }
 .main-mainpage .restaurants-bloc-image .restaurants-main-info .new-main .new-position .new-main-style {
-  font-size: 15px;
+  font-size: 14px;
   color: #149374;
   font-weight: bold;
 }
@@ -382,8 +384,9 @@ body {
   margin-bottom: -40px;
 }
 .main-menus .menu-text {
-  margin-top: -15px;
+  margin-top: -5px;
   margin-bottom: -14px;
+  margin-right: 5px;
 }
 .main-menus .cards-menu-title {
   font-size: 14px;
@@ -409,7 +412,7 @@ body {
   font-weight: bold;
   margin-top: -5px;
 }
-.main-menus .veloute, .main-menus .soupe, .main-menus .tartare, .main-menus .coquilles, .main-menus .magret, .main-menus .pigeon, .main-menus .petales, .main-menus .fondant, .main-menus .millefeuille {
+.main-menus .menu-content {
   border: solid #ffffff;
   background-color: #ffffff;
   border-radius: 16px;
@@ -424,41 +427,50 @@ body {
   cursor: pointer;
   flex-direction: row;
 }
-.main-menus .veloute .slider-content, .main-menus .soupe .slider-content, .main-menus .tartare .slider-content, .main-menus .coquilles .slider-content, .main-menus .magret .slider-content, .main-menus .pigeon .slider-content, .main-menus .petales .slider-content, .main-menus .fondant .slider-content, .main-menus .millefeuille .slider-content {
-  transition: width 0.4s ease-in, visibility 4s linear;
-  width: 100%;
-  margin: 10px 4px 0 15px;
-}
-.main-menus .veloute .tartare-content-hover, .main-menus .soupe .tartare-content-hover, .main-menus .tartare .tartare-content-hover, .main-menus .coquilles .tartare-content-hover, .main-menus .magret .tartare-content-hover, .main-menus .pigeon .tartare-content-hover, .main-menus .petales .tartare-content-hover, .main-menus .fondant .tartare-content-hover, .main-menus .millefeuille .tartare-content-hover {
-  visibility: hidden;
-  background-color: #99E2D0;
-  display: block;
-}
-.main-menus .veloute .tartare-content-hover .check-icon, .main-menus .soupe .tartare-content-hover .check-icon, .main-menus .tartare .tartare-content-hover .check-icon, .main-menus .coquilles .tartare-content-hover .check-icon, .main-menus .magret .tartare-content-hover .check-icon, .main-menus .pigeon .tartare-content-hover .check-icon, .main-menus .petales .tartare-content-hover .check-icon, .main-menus .fondant .tartare-content-hover .check-icon, .main-menus .millefeuille .tartare-content-hover .check-icon {
-  transform: rotate(-260deg);
-  transition: transform 1s ease-in-out;
-}
-.main-menus .veloute:hover .slider-content, .main-menus .soupe:hover .slider-content, .main-menus .tartare:hover .slider-content, .main-menus .coquilles:hover .slider-content, .main-menus .magret:hover .slider-content, .main-menus .pigeon:hover .slider-content, .main-menus .petales:hover .slider-content, .main-menus .fondant:hover .slider-content, .main-menus .millefeuille:hover .slider-content {
-  width: 80%;
-}
-.main-menus .veloute:hover .slider, .main-menus .soupe:hover .slider, .main-menus .tartare:hover .slider, .main-menus .coquilles:hover .slider, .main-menus .magret:hover .slider, .main-menus .pigeon:hover .slider, .main-menus .petales:hover .slider, .main-menus .fondant:hover .slider, .main-menus .millefeuille:hover .slider {
+.main-menus .menu-content .slider {
   display: flex;
   justify-content: center;
-  height: 100%;
   align-items: center;
 }
-.main-menus .veloute:hover .tartare-content-hover, .main-menus .soupe:hover .tartare-content-hover, .main-menus .tartare:hover .tartare-content-hover, .main-menus .coquilles:hover .tartare-content-hover, .main-menus .magret:hover .tartare-content-hover, .main-menus .pigeon:hover .tartare-content-hover, .main-menus .petales:hover .tartare-content-hover, .main-menus .fondant:hover .tartare-content-hover, .main-menus .millefeuille:hover .tartare-content-hover {
-  width: 20%;
+.main-menus .menu-content .slider-content {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  padding-left: 15px;
+  padding-right: 2%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 65px;
+}
+.main-menus .menu-content .more-info-bloc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-menus .menu-content .menu-content-hover {
   background-color: #99E2D0;
+  width: 0%;
+  display: flex;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
-  visibility: visible;
+  justify-content: center;
+  transition: width 0.6s ease-in-out;
 }
-.main-menus .veloute:hover .tartare-content-hover .check-icon, .main-menus .soupe:hover .tartare-content-hover .check-icon, .main-menus .tartare:hover .tartare-content-hover .check-icon, .main-menus .coquilles:hover .tartare-content-hover .check-icon, .main-menus .magret:hover .tartare-content-hover .check-icon, .main-menus .pigeon:hover .tartare-content-hover .check-icon, .main-menus .petales:hover .tartare-content-hover .check-icon, .main-menus .fondant:hover .tartare-content-hover .check-icon, .main-menus .millefeuille:hover .tartare-content-hover .check-icon {
-  width: 22%;
+.main-menus .menu-content .menu-content-hover .check-icon {
+  transform: rotate(-260deg);
+  transition: transform 1s, opacity 0.5s;
   color: white;
   font-size: 20px;
+  text-align: center;
+  opacity: 0;
+}
+.main-menus .menu-content:hover .menu-content-hover {
+  width: 20%;
+}
+.main-menus .menu-content:hover .menu-content-hover .check-icon {
   transform: rotate(0);
+  opacity: 1;
 }
 .main-menus .green-bar {
   text-decoration: underline #99E2D0 3px;

@@ -9,6 +9,15 @@ header {
     margin-top:20px;
     width:100%;
 
+    .omf-menu-arrow {
+        color: #686565;
+        display: flex;
+        justify-content: start;
+        width: 2%;
+        margin-left: 10px;
+        text-decoration:none;
+     }
+     
     .omf-menu-logo {
         @include logo-omf-base;
         width: 95%;
@@ -20,11 +29,4 @@ header {
         width:145px;
      }
 
-     .omf-menu-arrow {
-        color: #686565;
-        display: flex;
-        justify-content: start;
-        width: 2%;
-        margin-left: 10px;
-     }
 }

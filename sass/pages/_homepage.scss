@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', 'Shrikhand', sans-serif;
     margin:0;
     padding:0;
+    min-width:320px;
 }
 
 .first-section {
@@ -229,7 +230,7 @@ body {
                         top:1px; 
                         left:11px;
                         .new-main-style {
-                            font-size:15px;
+                            font-size:14px;
                             color : #149374;
                             font-weight: bold;
                         }
